@@ -10,7 +10,7 @@ RUN apt-get update \
     && apt-get -y install libdb4.8-dev libdb4.8++-dev unzip \
     && apt-get -y install wget libzmq3 libminiupnpc8
 	
-ENV WALLET_URL=https://github.com/papelcoin/papelcoin/releases/download/v0.12.2.3/PapelD-Unix.zip
+ENV WALLET_URL=https://github.com/papelcoin/papelcoin/releases/download/v0.12.2.4/papeld-unix.zip
 
 RUN wget $WALLET_URL -O /tmp/wallet.zip \
 	&& unzip /tmp/wallet.zip -d /usr/local/bin \
