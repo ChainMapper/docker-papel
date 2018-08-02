@@ -1,6 +1,6 @@
 FROM chainmapper/walletbase-xenial
 	
-ENV WALLET_URL=https://github.com/papelcoin/papelcoin/releases/download/1.0.0.3/Papel.Core.Linux.zip
+ENV WALLET_URL=https://github.com/papelcoin/papelcoin/releases/download/1.0.0.4/Papel.Core.Linux.zip
 
 RUN wget $WALLET_URL -O /tmp/wallet.zip \
 	&& unzip /tmp/wallet.zip -d /usr/local/bin \
